@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Hind&family=Mali:ital,wght@0,300;0,400;1,200;1,300&family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;1,200;1,400&family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Hind&family=Mali:ital,wght@0,300;0,400;1,200;1,300&family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;1,200;1,400&family=Oswald:wght@500&family=Poppins&display=swap');
+.chat-header{
+    display: flex;
+    border: 1px solid rgb(61, 52, 1);
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+    padding: 0 1.5rem;
+    background-image: linear-gradient(to right, #C33764 ,#1D2671);
+}
+.chat-header-title{
+    letter-spacing: 0.3rem;
+    font-family: 'Oswald', sans-serif;
+    color:whitesmoke;
+    text-shadow: 1px 0.5px black;
+    margin: 0;
+}
+.chat-header-button{
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.05rem;
+    padding: 0.3rem 0.9rem;
+    border-radius: 20px;
+}
+.chat-header-menu{
+    display: flex;
+    align-items: center;
+}
+.chat-header-menu i{
+    color: whitesmoke;
+    padding-right: 1rem;
+}
+.chat-page-main-container{
+    display: flex;
+    height: 92vh;
+}
+.chat-page-chatname{
+    width: 25%;
+    border-right: 1px solid grey;
+    background-color: rgb(248, 245, 242);
+}
+.chat-page-chatWindow{
+    border-left: 1px solid grey;
+    margin-left: 0.5rem;
+    width: 75%;
+}
+.chat-header-menu img{
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    border: 1px solid rgb(155, 155, 155);
+    cursor: pointer;
+    position: relative;
+}
+
+.chat-header-menu-list{
+    list-style: none;
+    position: absolute;
+    top:56px;
+    right: 0px;
+    color:black;
+    z-index: 100;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+}
+.chat-header-menu-list li{
+    cursor: pointer;
+    border: 1px solid gray;
+    background-color: rgb(248, 245, 242);
+    letter-spacing: 0.01rem;
+    font-family: 'Poppins', sans-serif;
+    padding: 0.5rem 1rem;
+}
+.chat-header-menu-list li:hover{
+    border: 1px solid rgb(172, 141, 141);
+    background-color: rgb(179, 176, 218);
+}
+.profileimg{
+    object-fit: cover;
+}
+@media only screen and (max-width: 650px) {
+    .chat-header{
+        padding: 0.5rem 0.5rem;
+    }
+   }
+@media only screen and (max-width: 550px) {
+    .chat-header-button{
+        padding: 0.2rem 0.4rem;
+    }
+   }
+   @media only screen and (max-width: 500px) {
+    .chat-header-button{
+        padding: 0.2rem 0.4rem;
+        border-radius: 10px;
+    }
+   }
+   @media only screen and (max-width: 400px) {
+    .chat-header-title{
+        letter-spacing: 0.15rem;
+    }
+    .chat-header-menu i{
+        color: whitesmoke;
+        padding-right: 0.5rem;
+    }
+   }
+   @media only screen and (max-width: 1250px) {
+    .chat-page-chatname{
+        width: 30%;
+    }
+    .chat-page-chatWindow{
+        width: 70%;
+    }
+   }
+   @media only screen and (max-width: 900px) {
+    .chat-page-chatname{
+        width: 100%;
+    }
+    .chat-page-chatWindow{
+        margin-left: 0rem;
+       width: 100%;
+    }
+   }
+.notactive{
+    display: none;
+}

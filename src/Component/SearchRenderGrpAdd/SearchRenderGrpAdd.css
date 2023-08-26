@@ -1,0 +1,40 @@
+.Search-render-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem ;
+    width: 100%;
+}
+.Search-render{
+    display: flex;
+    border: 1px solid black;
+    padding: 0.5rem;
+    margin-top:0.3rem ;
+}
+.Search-render-img{
+    height: 3rem;
+    width: 3rem;
+}
+.Search-render-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.search-render-content{
+    padding-left: 1rem;
+   
+}
+.search-render-content-userId{
+    text-transform: capitalize;
+}
+.search-render-content p{
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    
+}
+.Search-render:hover{
+    /* border: 1px dotted whitesmoke; */
+    background-color: rgb(216, 216, 216);
+    /* color: whitesmoke; */
+}

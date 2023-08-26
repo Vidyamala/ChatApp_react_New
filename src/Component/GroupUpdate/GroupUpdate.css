@@ -1,0 +1,23 @@
+.grpupdate-body-chatname{
+    display: flex;
+    width: 100%;
+   margin: 10px 0;
+}
+.button-update{
+    flex: 1;
+    margin-left: 0.5rem;
+    padding: 0 15px;
+}
+.input-chatname{
+    box-shadow: none;
+    outline: none;
+    border: 1px solid grey;
+}
+.input-chatname:focus{
+    box-shadow: none !important;
+    outline: none !important;
+    border: 1px solid grey !important;
+}
+.group-add{
+    display: flex;
+}

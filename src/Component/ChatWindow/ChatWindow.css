@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Hind&family=Mali:ital,wght@0,300;0,400;1,200;1,300&family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;1,200;1,400&family=Oswald:wght@500&family=Poppins&display=swap');
+.ChatWindow-container{
+    display: flex;
+    /* border: 1px solid grey; */
+    letter-spacing: 0.01rem;
+    background-color: rgb(248, 245, 242);
+    height: 100%;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+.ChatWindow-Header h4{
+    margin: 0;
+}
+.chatname{
+    text-transform: capitalize;
+}
+.ChatWindow-Header{
+    display: flex;
+    border-bottom: 1px solid gray;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 1rem 0 0.5rem;
+    margin-bottom: 10px;
+}
+.ChatWindow-Header i{
+    cursor: pointer;
+}
+.message-container{
+    flex: 1;
+    overflow-y: scroll;
+    background-color: rgb(248, 245, 242);
+}
+.messages{
+    max-height: 100%;
+}
+.message-send{
+  margin: 5px 0;
+  background-color: rgb(248, 245, 242);
+    display: flex;
+    align-items: center;
+}
+.message-send input{
+    width: 89%;
+    margin-left: 0.5%;
+    padding: 5px;
+    border: 1px solid gray;
+}
+.message-send input:focus{
+    outline: none;
+}
+.message-send button{
+    margin-left: 0.5%;
+    width: 9%;
+    padding: 5px;
+}
+@media only screen and (max-width: 500px) {
+    .message-send input{
+        width: 87%;
+        padding: 5px;
+    }
+    .message-send button{
+        margin-left: 0.5%;
+        width: 12%;
+        padding: 5px;
+    }
+}
+.message-container::-webkit-scrollbar {
+    display: none;
+  }
+  .chatNotSelected{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.01rem;
+    background-color: rgb(248, 245, 242);
+  }
+  .noMessages{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+ }
+ .noMessages button{
+    padding: 0.3rem 0.5rem;
+ }
+ .profilepic{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+   
+    object-fit: contain;
+    margin-left:10px ;
+ }
+ .selecteduserDetails{
+    display: flex;
+    align-items: center;
+ }
+ .loader{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .messagesending{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 30px;
+ }

@@ -1,0 +1,15 @@
+p{
+    font-size: 1rem;
+}
+.input-style{
+    border: 1px solid gray;
+}
+.input-style:focus{
+    border: 1px solid gray;
+}
+.matchnotfound{
+  color: rgb(200, 105, 105);
+}
+h5.matchnotfound{
+    margin: 0;
+}
