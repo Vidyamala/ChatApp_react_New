@@ -22,7 +22,7 @@ export const signup=async(userDetails)=>{
    }
    catch(e){
     console.log(e.response.data,"EEEEEEEEEEEEEE")
-    return {"Error":e.message}
+    return {"Error":e.response.data.message}
    }
 }
 export const getUsers=async(query)=>{

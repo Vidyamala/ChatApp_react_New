@@ -145,7 +145,7 @@ function Chatpage() {
                     <button className="chat-header-button" onClick={handleUserModal}> <i class="fa-solid fa-magnifying-glass"></i> {width > 500 ? "Search User" : ""}</button>
                     <h3 className="chat-header-title">Kon-nect</h3>
                     <div className="chat-header-menu">
-                        <i class="fa-solid fa-bell fa-lg"></i>
+                        {/* <i class="fa-solid fa-bell fa-lg"></i> */}
                         {/* <select name="head-menu" id="head-menu" onChange={handleSelectChange}>
                 <option value="myprofile" >My profile</option>
                 <option value="logout">Log out</option>
