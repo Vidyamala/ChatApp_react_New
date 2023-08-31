@@ -1,8 +1,9 @@
 import axios from "axios"
+const BASE_URL = process.env.REACT_APP_BACKEND_URL;
 export const login=async(userDetails)=>{
   
    try{
-   const res=await axios.post("http://localhost:8000/chatapp/api/v1/signin",
+   const res=await axios.post(`${BASE_URL}/chatapp/api/v1/signin`,
         userDetails
     )
     return res.data;
@@ -15,7 +16,7 @@ export const login=async(userDetails)=>{
 export const signup=async(userDetails)=>{
     
    try{
-   const res=await axios.post("http://localhost:8000/chatapp/api/v1/signup",
+   const res=await axios.post(`${BASE_URL}/chatapp/api/v1/signup`,
         userDetails
     )
     return res.data;
@@ -33,7 +34,7 @@ export const getUsers=async(query)=>{
       };
       var res;
     try{
-      res=await axios.get(`http://localhost:8000/chatapp/api/v1/getusers?match=${query}`,  
+      res=await axios.get(`${BASE_URL}/chatapp/api/v1/getusers?match=${query}`,  
         axiosConfig);
         return res.data;
     }
