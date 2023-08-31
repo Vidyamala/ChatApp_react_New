@@ -16,7 +16,7 @@ function ChatWindow(){
     const dummy=useRef(0);
     const {loggedUser,setLoggedUser}=useContext(appcontext);
    
-   const ENDPOINT = "http://localhost:8000";
+   const ENDPOINT = "https://konnect-o13b.onrender.com";
   
     const [messageSending,setMessageSending]=useState(false)
     var {isUserSelected,setIsUserSelected,fetchedUser,setFetchedUser,setSelectedChat,handleIsUserSelected,handleHide,selectedChat,handleShowSelectedProfile,messages,setMessages,selectedUser,messageLoading}=useContext(chatContext);

@@ -49,7 +49,7 @@ function Chatpage() {
        
     }
     const {loggedUser,setLoggedUser}=useContext(appcontext);
-    console.log("loggedUser",loggedUser);
+    console.log("loggedUser in chatpage",loggedUser);
    const getuser= async()=>{
     setIsmyChatLoading(true);
         const res= await getUserById(localStorage.getItem("id"));
